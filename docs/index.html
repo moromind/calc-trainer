@@ -90,9 +90,14 @@
                     </h3>
     
                     <div class="home-content__btn-wrap">
-                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
-                            Start Training Now
-                        </a>
+                        <div style="display: flex; gap: 15px; justify-content: flex-start; align-items: center; flex-wrap: wrap;">
+                            <a href="#0" title="Download on App Store" onclick="showPublishingAlert('App Store'); return false;">
+                                <img src="images/appstore.png" alt="Download on App Store" style="height: 60px; width: auto; cursor: pointer;">
+                            </a>
+                            <a href="#0" title="Get it on Google Play" onclick="showPublishingAlert('Google Play'); return false;">
+                                <img src="images/google-play.png" alt="Get it on Google Play" style="height: 60px; width: auto; cursor: pointer;">
+                            </a>
+                        </div>
                     </div>
                 </div> <!-- end home-content__left-->
 
@@ -336,19 +341,20 @@
             <div class="row testimonials">
 
                 <div class="col-full slick-slider testimonials__slider">                    <div class="testimonials__slide">
-                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
+                        <img src="images/avatars/sophiemath_star.png" alt="Author image" class="testimonials__avatar">
                         
-                        <p>Calc Trainer completely transformed my mental math skills! What I love most is how it focuses on my weak spots. 
-                        The app remembers which problems I struggle with and keeps bringing them back until I master them. My calculation speed has doubled in just a month!</p>
+                        <p>I used to be really scared of math tests, but Calc Trainer made learning times tables so much fun! 
+                            The colors and sounds are awesome, and I love how it remembers what I need to practice. 
+                            I got 100% on my multiplication test last week - my teacher was so proud! Now I'm the fastest in my class at mental math! 🌟</p>
 
                         <div class="testimonials__author">
-                            <span class="testimonials__name">Sarah Chen</span>
-                            <a href="#0" class="testimonials__link">@sarahmathlover</a>
+                            <span class="testimonials__name">Sophie Miller</span>
+                            <a href="#0" class="testimonials__link">@sophiemath_star</a>
                         </div>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                        <img src="images/avatars/teachermike.png" alt="Author image" class="testimonials__avatar">
                         
                         <p>As a teacher, I'm amazed by how this app makes mental math practice addictive. My students are actually excited about arithmetic now! 
                         The instant feedback and gamification elements keep them engaged while the intelligent difficulty progression ensures steady improvement.</p>
@@ -360,7 +366,7 @@
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <img src="images/avatars/emmathinks.png" alt="Author image" class="testimonials__avatar">
                         
                         <p>The reversed calculator concept is brilliant! Instead of me using a calculator, the calculator trains me. I love how it only remembers my recent performance, 
                         so I get a fresh start as I improve. Perfect for building confidence while still being challenged.</p>
@@ -466,8 +472,8 @@
         <div class="row">
             <div class="col-full text-center">
                 <ul class="download-badges" data-aos="fade-up">
-                    <li><a href="#0" title="" class="badge-appstore">App Store</a></li>
-                    <li><a href="#0" title="" class="badge-googleplay">Play Store</a></li>
+                    <li><a href="#0" title="" class="badge-appstore" onclick="showPublishingAlert('App Store'); return false;">App Store</a></li>
+                    <li><a href="#0" title="" class="badge-googleplay" onclick="showPublishingAlert('Google Play'); return false;">Play Store</a></li>
                 </ul>
             </div> 
         </div>
@@ -520,12 +526,8 @@
                         <h4>Contact Us.</h4>
 
                         <p>
-                        Phone: (+63) 555 1212 <br>
-                        Fax: (+63) 555 0100
-                        </p>
-                        <p>
                         Need help or have a question? Contact us at: <br>
-                        <a href="mailto:#0" class="footer__mail-link">support@kairos.com</a>
+                        <a href="mailto:countymcdigits@gmail.com" class="footer__mail-link">countymcdigits@gmail.com</a>
                         </p>
                     </div>
 
@@ -533,7 +535,7 @@
             </div>
 
             <div class="col-full ss-copyright">
-                <span>&copy; Copyright Kairos 2018</span> 
+                <span>&copy; Copyright Calc Trainer 2025</span> 
                 <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
             </div>
 
@@ -551,5 +553,19 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    
+    <!-- Publishing Alert Script -->
+    <script>
+    function showPublishingAlert(storeName) {
+        alert(
+            "🚀 Exciting News!\n\n" +
+            "Calc Trainer is currently in the final stages of publishing to " + storeName + "!\n\n" +
+            "📱 We're working hard to bring you the best mental math training experience\n" +
+            "⏰ The download link will be active very soon\n" +
+            "🔔 Stay tuned for updates!\n\n" +
+            "Thank you for your interest in Calc Trainer! 🧠⚡"
+        );
+    }
+    </script>
 
 </body>
